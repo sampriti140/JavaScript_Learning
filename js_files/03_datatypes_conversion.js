@@ -55,8 +55,8 @@ console.log(+"");// output: 0, and empty string is converted into 0
 // pre increment and post increment
 let x=2;
 let y=x++;
-console.log(`x:${x}, y:${y}`);// x:3, y:2 in post increment what happens is fisrt assign value to y, then increment
+console.log(`x:${x}, y:${y}`);// x:3, y:2 in post increment what happens fisrt is it assign value to y, then increment x and return the value of x to x, to modify
 
 let x1=2;
 let y1=++x1;
-console.log(`x1:${x1}, y1:${y1}`);// x1:3, y1:3 but here first increment the asign to y1
+console.log(`x1:${x1}, y1:${y1}`);// x1:3, y1:3 but here first increment  happens returns to x1, the asign to y1
