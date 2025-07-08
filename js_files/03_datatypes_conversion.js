@@ -32,3 +32,31 @@ let c="My name"
 let ctoBoolean= Boolean(c);
 console.table([atoBoolean,btoBoolean,ctoBoolean]);// false false true 
 console.table([typeof(atoBoolean),typeof(btoBoolean),typeof(ctoBoolean)]); //'boolean' 'boolean' 'boolean'
+
+
+
+
+/********************************different arithmatic operations in js**************************************/
+// we can perform different arithmatic operations in our console log
+
+// console.log(2+2); sum =>4
+// console.log(2-2); minus =>0
+// console.log(2*3); multiplication =>6
+// console.log(4/2); division =>2
+// console.log(2**3); power =>8
+// console.log(3%2); modulus =>1
+
+//some tricky conversion and some operation
+console.log("1"+2+3);//output: 123, js reads from left to right, so first js encoountered a string, so it converted non strings into string and concat it
+console.log(1+2+"3");//output: 33, here js first adding 1,2 then concat it with 3,
+console.log(+true); // output: 1, here true is converted into number, cause it has "+" sign
+console.log(+"");// output: 0, and empty string is converted into 0
+
+// pre increment and post increment
+let x=2;
+let y=x++;
+console.log(`x:${x}, y:${y}`);// x:3, y:2 in post increment what happens is fisrt assign value to y, then increment
+
+let x1=2;
+let y1=++x1;
+console.log(`x1:${x1}, y1:${y1}`);// x1:3, y1:3 but here first increment the asign to y1
